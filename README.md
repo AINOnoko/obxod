@@ -15,3 +15,11 @@
     sudo chmod -R 755 ./obhod
     cd ./obxod
     sudo bash ./obxod.sh
+
+Выражаю огромную благодарность таким личностям, как:
+bol-van
+Flowseal
+
+А так же их проектам/репозиториям:
+https://github.com/bol-van/zapret
+https://github.com/Flowseal/zapret-discord-youtube
