@@ -1,0 +1,9 @@
+cp ./conf/dnscrypt-proxy.toml /etc/dnscrypt-proxy/dnscrypt-proxy.toml
+        cp ./conf/resolved.conf /etc/systemd/resolved.conf
+        chattr -i /etc/resolv.conf
+        cp ./conf/resolv.conf /etc/resolv.conf
+        chattr +i /etc/resolv.conf
+        systemctl disable systemd-resolved.service
+        systemctl stop systemd-resolved.service
+        systemctl restart NetworkManager.service
+        systemctl restart dnscrypt-proxy.service
