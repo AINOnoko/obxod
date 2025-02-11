@@ -2,6 +2,7 @@ mkdir /opt
 git clone https://github.com/bol-van/zapret.git
 cp -r ./zapret /opt
 rm -r ./zapret
+cp -r ./conf/binaries /opt/zapret/binaries
 cp ./conf/ipset-discord.txt /opt/zapret/
 cp ./conf/list-general.txt /opt/zapret/
 cp ./conf/list-discord.txt /opt/zapret/
